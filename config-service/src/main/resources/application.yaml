@@ -2,11 +2,16 @@ spring:
   application:
     name: config-service
 
+
   cloud:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/abdulwahidkhuhro/wherehouse-system.git
+          default-label: main
+          search-paths:
+            - configurations
+
   config:
     name:
       configserver:
