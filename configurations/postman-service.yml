@@ -6,4 +6,4 @@ app:
   db:
     url: jdbc:mysql://localhost:3306/postman_db
     username: postman_user
-    password: '{cipher}b07c822a2aec985249e28d486269de1c14bf6b195f5a3878ba494d82b197694290a11661197cf864e727925c9d482b5a'     # we will replace this with a cipher
+    password: '{cipher}4f001d85c9c87cc3a0f3dec6074a54fd96be3466103663842fdb496828d8352a'     # we will replace this with a cipher
