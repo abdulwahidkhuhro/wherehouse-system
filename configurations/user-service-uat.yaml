@@ -1,0 +1,4 @@
+
+app:
+  otp:
+    max-attempts: 5

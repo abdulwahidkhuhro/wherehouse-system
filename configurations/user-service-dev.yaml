@@ -1,3 +1,7 @@
 spring:
   application:
     name: user-service-dev
+
+app:
+  otp:
+    max-attempts: 8

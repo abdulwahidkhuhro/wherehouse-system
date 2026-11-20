@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active:
+      - dev
+
+  config:
+    import:
+      - optional:configserver:http://localhost:8888
+
+server:
+  port: 8081
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+wrong:
+  otp:
+    count: 5
