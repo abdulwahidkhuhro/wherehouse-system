@@ -11,5 +11,9 @@ spring:
           search-paths:
             - configurations
 
+encrypt:
+  key: 'SLT1ixEzv8Q1ZVvt08xzhD1/JQtZaIz3kCPPUEjxVRc='
+
 server:
   port: 8888
+
