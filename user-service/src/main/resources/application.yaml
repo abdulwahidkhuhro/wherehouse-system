@@ -1,9 +1,9 @@
 spring:
   application:
     name: user-service
-  profiles:
-    active:
-      - dev
+#  profiles:
+#    active:
+#      - dev
 
   config:
     import:
@@ -22,3 +22,9 @@ eureka:
 wrong:
   otp:
     count: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
