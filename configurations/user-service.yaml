@@ -1,13 +1,12 @@
-spring:
-  application:
-    name: user-service
+
+server:
+  port: 8081
 
 app:
   otp:
     max-attempts: 3
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh,health,info
+  message: Hello from user-service (default)
+  db:
+    url: jdbc:mysql://localhost:3306/postman_db
+    username: user-service-db-username
+    password: '{cipher}b33925eea2982be44aab35fbd8bf7fb8bcb53e218487bc30cfe266908faa6fa5'     # we will replace this with a cipher

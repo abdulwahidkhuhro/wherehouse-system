@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: postman-service
+
+    server:
+      port: 9093
+
+    app:
+      message: Hello from postman-service (uat)
+      db:
+        url: jdbc:mysql://localhost:3306/postman_db
+        username: postman_uat_user
+        password: '{cipher}4a1f01711a107e660901d1df3d23cda7ee35ce37e81dd3509fd2cafb1b5d0fdf9a17c19f098402db27a9a3783be856c1'     # we will replace this with a cipher
