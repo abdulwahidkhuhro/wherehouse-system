@@ -1,12 +1,16 @@
 
+#port
 server:
   port: 8081
 
+#app properties
 app:
   otp:
     max-attempts: 3
   message: Hello from user-service (default)
-  db:
-    url: jdbc:mysql://localhost:3306/postman_db
-    username: user-service-db-username
-    password: '{cipher}b33925eea2982be44aab35fbd8bf7fb8bcb53e218487bc30cfe266908faa6fa5'     # we will replace this with a cipher
+
+#db
+db:
+  url: jdbc:mysql://localhost:3306/postman_db
+  username: user-service-db-username
+  password: '{cipher}b33925eea2982be44aab35fbd8bf7fb8bcb53e218487bc30cfe266908faa6fa5'     # we will replace this with a cipher

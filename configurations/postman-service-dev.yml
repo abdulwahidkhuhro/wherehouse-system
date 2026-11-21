@@ -2,12 +2,16 @@ spring:
   application:
     name: postman-service
 
-    server:
-      port: 9092
+#db
+server:
+  port: 9092
 
-    app:
-      message: Hello from postman-service (dev)
-      db:
-        url: jdbc:mysql://localhost:3306/postman_db
-        username: postman_dev_user
-        password: '{cipher}f83092cb446482a3cea3b7381dc8c9b52b3b379d0105a1f5793d66bddb7efbf2a0b211d3b66b3cfe2894c532c859cde5'     # we will replace this with a cipher
+#app
+app:
+  message: Hello from postman-service (dev)
+
+#db properties
+db:
+  url: jdbc:mysql://localhost:3306/postman_db
+  username: postman_dev_user
+  password: '{cipher}f83092cb446482a3cea3b7381dc8c9b52b3b379d0105a1f5793d66bddb7efbf2a0b211d3b66b3cfe2894c532c859cde5'     # we will replace this with a cipher

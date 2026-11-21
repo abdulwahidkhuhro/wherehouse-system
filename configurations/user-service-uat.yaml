@@ -1,12 +1,15 @@
 
+#port
 server:
   port: 8083
 
+#app properties
 app:
   otp:
     max-attempts: 8
-    message: Hello from user-service (uat)
+  message: Hello from user-service (uat)
 
+#db
 db:
   url: jdbc:mysql://localhost:3306/postman_db
   username: user-service-db-username

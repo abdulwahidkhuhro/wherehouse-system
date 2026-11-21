@@ -1,0 +1,9 @@
+
+default:
+  message: Hello from application configuration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
